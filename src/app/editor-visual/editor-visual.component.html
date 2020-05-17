@@ -1,0 +1,34 @@
+<p>editor-visual works!</p>
+
+<hr />
+
+<h2>Tabela</h2>
+<!-- <app-contexto-item-tabela></app-contexto-item-tabela>
+<app-contexto-item-tabela></app-contexto-item-tabela>
+<app-contexto-item-tabela></app-contexto-item-tabela> -->
+<div class="row">
+    <div class="col-12">
+        <ng-container *ngFor="let tabela of tabelas">
+            <div class="row">
+                <div class="col-12">
+                    <app-contexto-item-tabela [tabela]="tabela"></app-contexto-item-tabela>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
+<hr />
+
+<h2>Condição</h2>
+<app-contexto-item-condicao></app-contexto-item-condicao>
+
+<hr />
+
+<h2>Ação</h2>
+<app-contexto-item-acao></app-contexto-item-acao>
+
+<hr />
+
+<h2>Coluna</h2>
+<app-contexto-item-coluna></app-contexto-item-coluna>
